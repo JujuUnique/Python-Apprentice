@@ -17,8 +17,20 @@ def set_turtle_image(turtle,image_name):
     image_path = dir(image_dir / image_name)  
     screen = turtle.getscreen()
     screen.addshape(image_path)
-screen=turtle.screen()
+    turtle.shape(image_path)
+screen = turtle.screen()
 screen.setup(width=600, hight=600)
 t=turtle.Turtle()
-
+set_turtle_image(t, 'moustache1.gif')
 screen.bgcolor('white')
+t.turtlesize(stretch_wid=3, stretch_len=3, outline=4)
+
+def set_backround_image(window, image_name):
+    from pathlib import path
+    from PIL import Image
+    image_dir=path(__file__).parent/"images"
+    image_path = str(image_dir/image_name)
+    image=image.open(image_path)
+    window.setup(image.width, image.height, startx=0, starty=0)
+    window.bgpic(image_path)
+    set_backround_image(screen, "emoji.png")
