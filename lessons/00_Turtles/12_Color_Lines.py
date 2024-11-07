@@ -8,20 +8,27 @@ Color Lines
 import turtle                           # Tell Python we want to work with the turtle
 turtle.setup (width=600, height=600)    # Set the size of the window
 
-tina = turtle.Turtle()                  # Create a turtle named tina
+t = turtle.Turtle()                  # Create a turtle named tina
 
-tina.shape('turtle')                    # Set the shape of the turtle to a turtle
-tina.speed(2)                           # Make the turtle move as fast, but not too fast. 
+t.shape('turtle')                    # Set the shape of the turtle to a turtle
+t.speed(1.5)                           # Make the turtle move as fast, but not too fast. 
 
 
 colors = [ 'red', 'blue', 'black', 'orange']    # define a list of colors
 
-for color in colors:                            # loop through the colors
+for item in colors:                            # loop through the colors
     ... # Your code here
+    t.color(colors)
+    t.forward(200)
+    t.left(90)
+
+turtle.exitonclick()
 
 
 # 2) Make another square, but put the colors in reverse order, using a negative index. 
 
 ... # Your code here
 
-tina.done()
+
+
+

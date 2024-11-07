@@ -36,9 +36,15 @@ def set_backround_image(window, image_name):
 
 set_backround_image(screen, "emoji.png")
 t.penup()
-def screen_clicked(x, y):
-    t.goto(x, y)
+def turtle_clicked(t, x, y):
+    
+    for i in range(0,360, 20):
+        t.left(20)
+        t.forward(20)
 
-screen.onclick(screen_clicked)
+#screen.onclick(turtle_clicked)
+
+t.onclick(lambda x, y, t=t: turtle_clicked(t, x, y)) 
 
 turtle.done()
+#
