@@ -6,8 +6,10 @@ in 14_FLaming_Ninja_Star.py, but use what you've learned about loops
 """
 
 ... # Copy code to make a turtle and set up the window
-
-t = ... # Create a turtle named t
+import turtle
+turtle.setup(width=600,height=600)
+window=turtle.Screen
+t = turtle.Turtle() # Create a turtle named t
 
 
 
@@ -16,8 +18,12 @@ t = ... # Create a turtle named t
 # then right 60 degrees, then forward 100 pixels. Make any shape you like.
 
 def make_a_shape(t):
-    """Make a shape with turtle t. Make it go left or right or forward"""    
-    ...
+    t.forward(70)
+    t.left(55)   
+    t.forward(30)
+    t.left(75)
+     
+    
 
 # 2) Call make_a_shape() in a loop to make the turtle draw a spiral.
 # For instance, you can call make_a_shape() 100 times to make a spiral with 100 shapes.
@@ -26,6 +32,8 @@ def make_a_shape(t):
 
 num_shapes = ...
 
-for i in range(...):
+for i in range(100):
     make_a_shape(t)
-    t.right(360/num_shapes)
+   
+
+turtle.done()

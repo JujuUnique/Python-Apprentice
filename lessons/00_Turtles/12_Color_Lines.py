@@ -16,18 +16,25 @@ t.speed(1.5)                           # Make the turtle move as fast, but not t
 
 colors = [ 'red', 'blue', 'black', 'orange']    # define a list of colors
 
-for item in colors:                            # loop through the colors
+for color in colors:                            # loop through the colors
     ... # Your code here
-    t.color(colors)
+    t.color(color)
     t.forward(200)
     t.left(90)
 
-turtle.exitonclick()
+
 
 
 # 2) Make another square, but put the colors in reverse order, using a negative index. 
 
 ... # Your code here
+
+for i in range(len(colors)-1,-1,-1):
+    t.color(colors[i])
+    t.forward(100)
+    t.left(90)
+
+turtle.done()
 
 
 
