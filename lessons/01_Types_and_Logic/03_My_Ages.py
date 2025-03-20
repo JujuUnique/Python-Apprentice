@@ -69,7 +69,10 @@ elif age <65:
 else:
     years="old person"
 messagebox.showinfo('', "you are a " + years)
-window.mainloop()  # Keeps the window open
+window.mainloop()  # Keeps the window open1
+
+
+
 
 
 # TODO: 
