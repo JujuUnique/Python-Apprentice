@@ -25,7 +25,7 @@ you can ask for a string with simpledialog.askstring().
 from tkinter import messagebox, simpledialog, Tk
 # Create a window object
 # Hide the window, hint: use the withdraw method
-window=Tk 
+window=Tk()
 window.withdraw()
 
 
