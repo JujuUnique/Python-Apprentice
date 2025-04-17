@@ -37,13 +37,15 @@ number2=simpledialog.askinteger("","again")
 operation=simpledialog.askstring("","operation")
 # Use if-elif-else statements to provide the desired math operation on the numbers and display the result.
 if operation == "+":
-    messagebox.showinfo("","this equals" + str(number+number2))
+    messagebox.showinfo("","this equals"+ str(number+number2))
 elif operation== "-":
     messagebox.showinfo("","this equals"+ str(number-number2))
 elif operation== "*":
-    messagebox.showinfo("","this equals")
-    
-    
+    messagebox.showinfo("","this equals"+ str(number*number2))
+elif operation== "/": 
+    messagebox.showinfo("","this equals"+str(number/number2))
+else: messagebox.showinfo("","this equals... wait what the heck am i reading... nah i don't get paid enough for this go away")
+      
     
 
 
